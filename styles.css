@@ -1,9 +1,13 @@
 #container{
-    width: 500px;
-    height: 500px;
-    border: outset;
+    /* width: 500px;
+    height: 500px; */
+    
+    background-color: silver;
 }
 
-#container div{
-    border-color: white;
+.divPixel{
+    width: 1px;
+    height: 1px;
+    float: left;
+    /* background-color: black; */
 }
