@@ -15,15 +15,13 @@ const app = (function () {
 
     //Reconstrucción de la imagen
     public.reconstruction = () => {
-           pixels = imageData.data,
-            numPixels = imageData.width * imageData.height;
+           const pixels = imageData.data;
+        const numPixels = imageData.width * imageData.height;
 
             console.log(pixels)
             console.log(numPixels)
-            console.log(imageData.width)
-            console.log(imageData.height)
 
-        for (let i = 0; i < numPixels; i += 4) {
+        for (let i = 0; i < numPixels * 4; i += 4) {
             
             const r = pixels[i];
             const g = pixels[i + 1];
